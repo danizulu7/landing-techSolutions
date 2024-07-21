@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Solutions</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Sono:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#"
+            ><img src="images/logo512.png" alt="Logo" class="logo"
+          /></a>
+          <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="nav-list" id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to Tech Solutions</h1>
+        <p>
+          We provide innovative technological solutions to enhance your
+          business.
+        </p>
+        <a href="#services" class="btn">Learn more</a>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service">
+            <img src="images/web-development.jpg" alt="Web development" />
+            <h3>Web Development</h3>
+            <p>
+              We create modern, responsive websites that adapt to any device.
+            </p>
+          </div>
+          <div class="service">
+            <img src="images/digital-marketing.jpg" alt="Digital marketing" />
+            <h3>Digital marketing</h3>
+            <p>
+              Boost your brand with our effective and personalized digital
+              marketing strategies.
+            </p>
+          </div>
+          <div class="service">
+            <img src="images/technical-support.jpg" alt="technical Support" />
+            <h3>Technical support</h3>
+            <p>
+              We offer quality technical support to ensure the optimal
+              functioning of your systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-image="images/project1.jpg">
+            Web Project XYZ
+          </div>
+          <div class="portfolio-item" data-image="images/project2.jpg">
+            Marketing campaign ABC
+          </div>
+          <div class="portfolio-item" data-image="images/project3.jpg">
+            Business Support 123
+          </div>
+          <div class="portfolio-item" data-image="images/project4.jpg">
+            Mobile app DEF
+          </div>
+          <div class="portfolio-item" data-image="images/project5.jpg">
+            eCommerce development GHI
+          </div>
+          <div class="portfolio-item" data-image="images/project6.jpg">
+            SEO Optimization JKL
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="from_name" id="from_name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email_id" id="email_id" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" id="button" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Tech Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('0-cgtnNFlx_pKMXST')
+    </script>
+  </body>
+</html>
